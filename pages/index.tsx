@@ -14,7 +14,7 @@ const fetcher: Fetcher<detailedCoin, string> = (url: string) =>
   axios.get(url).then((res) => res.data);
 export default function Home() {
   const { data, isLoading, error } = useSWR(
-    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=gecko_desc&per_page=7&page=1&sparkline=false",
+    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=7&page=1&sparkline=false&price_change_percentage=7d",
     fetcher,
     {
       refreshInterval: 60000,

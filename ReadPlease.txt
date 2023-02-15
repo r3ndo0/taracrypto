@@ -9,12 +9,19 @@ code , So I decided to just increase the refetch interval in the source code (in
 60 seconds just to make the app work , obviously you can set the interval whatever you want as soon as you 
 have your own API ...
 
-2 - the background gradient may look a bit off but I tried and couldn't figure out the identical setup
-
-3 - the charts data are weekly and in terms of the difference in styling between the provided design and the outcome 
+2 - the charts data are weekly and in terms of the difference in styling between the provided design and the outcome 
 I should say ChartJS library does not provide that much of styling options , for example for the line charts the 
-ChartJS library provides just a few styling options according to their docs...
+ChartJS library provides just a few styling options like line Color or line width according to their docs...
 
-4 - This was my first ever encounter with charts and managing data , interesting experience and alot to be learned and 
+3 - This was my first ever encounter with charts and managing data , interesting experience and alot to be learned and 
 researched in the future...
 
+4 - There is a bug in the retrieved data from the API , when I tried to fetch the price history of a particular coin the data
+didn't match the data retrieved from the top 7 API-choice call , which caused mismatch between the Chart color and the 7day price history.
+
+
+
+And at the end thanks for providing this fun and educative challenge , no matter what decision you make I learned alot doing this challeng,
+this code was written in about 7 hours of coding and surely there are improvements to make .
+
+WITH REGARDS 

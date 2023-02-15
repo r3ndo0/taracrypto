@@ -7,6 +7,7 @@ const liClassNames =
 
 export default function MarketUpdate() {
   const data = useContext(CoinsContext);
+  console.log(data);
 
   return (
     <div className="mb-24 px-8">
@@ -43,7 +44,7 @@ export default function MarketUpdate() {
           <h2 className="">PRICE</h2>
           <h2 className="">CHANGE</h2>
           <h2 className="w-[200px] text-center">MARKET STATS</h2>
-          <h2 className="pr-6">TRADE</h2>
+          <h2 className="pr-4">TRADE</h2>
         </div>
         {data?.map((coin, index) => {
           return (
@@ -56,12 +57,16 @@ export default function MarketUpdate() {
                 {data && <img className="w-11 h-11" src={coin.image} />}
                 <h2 className="px-2"> {data && coin.name}</h2>
                 <h2 className="px-4 border-l border-l-[#B6B6B6] uppercase">
-                  {" "}
                   {data && coin.symbol}
                 </h2>
               </div>
               <h2>{data && coin.current_price}</h2>
-              <h2>{data && coin.price_change_percentage_24h}</h2>
+              <h2>
+                {data &&
+                  coin.price_change_percentage_7d_in_currency
+                    .toString()
+                    .slice(0, 6)}
+              </h2>
               <div> {data && <LineChart currency={coin.id} />}</div>
               <button className="bg-[#0FAE96] text-white rounded-[10px] py-2 px-4">
                 Trade

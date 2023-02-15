@@ -25,6 +25,7 @@ export type detailedCoin =
       atl_change_percentage: number;
       atl_date: string;
       roi: null;
-      last_updated: "2023-02-14T09:37:02.364Z";
+      last_updated: string;
+      price_change_percentage_7d_in_currency: number;
     }[]
   | null;
