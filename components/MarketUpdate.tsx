@@ -5,7 +5,7 @@ import LineChart from "./LineChart";
 const liClassNames =
   "border-2 border-[#FFFFFF0D] bg-[#FFFFFF0D] text-[#B6B6B6]  py-1 px-3 rounded-[6px]";
 
-export default function () {
+export default function MarketUpdate() {
   const data = useContext(CoinsContext);
 
   return (
