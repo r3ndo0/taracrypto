@@ -48,7 +48,7 @@ export default function LineChart({ currency }: { currency: string }) {
           ],
         });
       });
-  });
+  }, []);
 
   const options: ChartOptions<"line"> = {
     plugins: {
