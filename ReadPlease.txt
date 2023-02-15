@@ -1,0 +1,20 @@
+Hello ,
+
+The Challenge is done and dusted but a few things need to be noted : 
+
+1 - The free plan of CoinGecko API has a limit on calls per minute , the docs says it's 50 calls per minute 
+which at first thoughts you may think it is enough , but when I was developing the Charts section
+I came across a problem of number of calls , I don't know why it happened but I was getting 429 HTTP
+code , So I decided to just increase the refetch interval in the source code (index.ts/line-20) to
+60 seconds just to make the app work , obviously you can set the interval whatever you want as soon as you 
+have your own API ...
+
+2 - the background gradient may look a bit off but I tried and couldn't figure out the identical setup
+
+3 - the charts data are weekly and in terms of the difference in styling between the provided design and the outcome 
+I should say ChartJS library does not provide that much of styling options , for example for the line charts the 
+ChartJS library provides just a few styling options according to their docs...
+
+4 - This was my first ever encounter with charts and managing data , interesting experience and alot to be learned and 
+researched in the future...
+
